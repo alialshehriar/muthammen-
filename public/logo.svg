@@ -1,0 +1,11 @@
+<svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Seed/Sprout Icon -->
+  <circle cx="30" cy="30" r="20" fill="#10B981" opacity="0.2"/>
+  <path d="M30 15 Q25 25, 30 30 Q35 25, 30 15" fill="#10B981"/>
+  <path d="M30 30 L30 45" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="30" cy="45" r="3" fill="#10B981"/>
+  
+  <!-- Text "بذرة" in Arabic -->
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1F2937">بذرة</text>
+</svg>
+
