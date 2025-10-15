@@ -62,11 +62,11 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Image
-              src="/images/bithrah_icon.png"
+              src="/logo.png"
               alt="بذرة"
-              width={40}
+              width={120}
               height={40}
-              className="w-10 h-10"
+              className="h-10 w-auto"
             />
             <span className="text-2xl font-bold bg-gradient-to-r from-[#14B8A6] to-[#8B5CF6] bg-clip-text text-transparent">
               بذرة
