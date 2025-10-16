@@ -1,8 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import {
@@ -12,18 +10,12 @@ import {
 } from 'lucide-react';
 
 export default function EarlyBirdRewardsPage() {
-  const { data: session, status } = useSession();
-  const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [rewardData, setRewardData] = useState<any>(null);
 
   useEffect(() => {
-    if (status === 'unauthenticated') {
-      router.push('/auth/signin?redirect=/rewards/early-bird');
-    } else if (status === 'authenticated') {
-      fetchRewardData();
-    }
-  }, [status]);
+    fetchRewardData();
+  }, []);
 
   const fetchRewardData = async () => {
     try {

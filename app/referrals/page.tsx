@@ -1,8 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import {
@@ -13,8 +11,7 @@ import {
 } from 'lucide-react';
 
 export default function ReferralsPage() {
-  const { data: session, status } = useSession();
-  const router = useRouter();
+  const session = null; // Mock session for now
   const [copied, setCopied] = useState(false);
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState({
@@ -29,12 +26,8 @@ export default function ReferralsPage() {
   const [referrals, setReferrals] = useState<any[]>([]);
 
   useEffect(() => {
-    if (status === 'unauthenticated') {
-      router.push('/auth/signin?redirect=/referrals');
-    } else if (status === 'authenticated') {
-      fetchReferralData();
-    }
-  }, [status]);
+    fetchReferralData();
+  }, []);
 
   const fetchReferralData = async () => {
     try {
