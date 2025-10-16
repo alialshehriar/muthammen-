@@ -52,7 +52,7 @@ export default function ReferralsPage() {
     }
   };
 
-  const referralCode = session?.user?.referralCode || 'MUTHAMMEN-USER123';
+  const referralCode = (session?.user as any)?.referralCode || 'MUTHAMMEN-USER123';
   const referralLink = `https://www.muthammen.com/auth/register?ref=${referralCode}`;
 
   const copyToClipboard = () => {
