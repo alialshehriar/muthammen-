@@ -6,7 +6,7 @@ import {
   Map, MapPin, Search, Filter, Layers, Navigation,
   Compass, ZoomIn, ZoomOut, Maximize, Info, Star,
   TrendingUp, Eye, Target, Sparkles, Bell, Lock,
-  Calendar, ArrowRight, CheckCircle, Globe, Route
+  Calendar, ArrowRight, CheckCircle, Globe, Route, Gift
 } from 'lucide-react';
 
 export default function MapPage() {
