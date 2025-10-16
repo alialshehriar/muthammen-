@@ -5,29 +5,29 @@ import BottomNav from "@/components/BottomNav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "بذرة - منصة التمويل الجماعي الرائدة في السعودية | Bithrah",
-  description: "منصة بذرة هي منصة وساطة ذكية مدعومة بالذكاء الاصطناعي، تهدف لحل مشكلة صعوبة الوصول للتمويل التي يواجهها أصحاب الأفكار المبدعة في السعودية",
-  keywords: "بذرة, تمويل جماعي, استثمار, مشاريع, السعودية, ذكاء اصطناعي, Bithrah",
-  authors: [{ name: "Bithrah" }],
-  creator: "Bithrah",
-  publisher: "Bithrah",
+  title: "مُثمّن - تقييم عقاري ذكي بالذكاء الاصطناعي | Muthammen",
+  description: "منصة مُثمّن هي منصة تقييم عقاري ذكية مدعومة بالذكاء الاصطناعي، تهدف لتوفير تقييم دقيق وسريع للعقارات في السعودية خلال دقائق",
+  keywords: "مُثمّن, تقييم عقاري, عقارات, السعودية, ذكاء اصطناعي, Muthammen, AI valuation, real estate",
+  authors: [{ name: "Muthammen" }],
+  creator: "Muthammen",
+  publisher: "Muthammen",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://bithrahapp.com'),
+  metadataBase: new URL('https://www.muthammen.com'),
   openGraph: {
-    title: "بذرة - منصة التمويل الجماعي الرائدة في السعودية",
-    description: "منصة وساطة ذكية مدعومة بالذكاء الاصطناعي لربط الأفكار المبدعة بالمستثمرين الأذكياء",
-    url: "https://bithrahapp.com",
-    siteName: "Bithrah",
+    title: "مُثمّن - تقييم عقاري ذكي بالذكاء الاصطناعي",
+    description: "احصل على تقييم دقيق لعقارك في أقل من دقيقة باستخدام تقنيات الذكاء الاصطناعي المتقدمة",
+    url: "https://www.muthammen.com",
+    siteName: "Muthammen",
     locale: "ar_SA",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "بذرة - منصة التمويل الجماعي الرائدة في السعودية",
+    title: "مُثمّن - تقييم عقاري ذكي بالذكاء الاصطناعي",
     description: "منصة وساطة ذكية مدعومة بالذكاء الاصطناعي",
   },
   robots: {
