@@ -15,10 +15,22 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/home', request.url));
   }
   
-  // Redirect non-logged-in users from protected routes to signin page
-  const protectedRoutes = ['/home', '/dashboard', '/wallet', '/profile', '/negotiations', '/projects/create', '/projects/edit'];
+  // Protected routes that require authentication
+  const protectedRoutes = [
+    '/home', 
+    '/dashboard', 
+    '/wallet', 
+    '/profile', 
+    '/negotiations', 
+    '/projects/create', 
+    '/projects/edit',
+    '/settings',
+    '/messages'
+  ];
+  
   const isProtectedRoute = protectedRoutes.some(route => pathname.startsWith(route));
   
+  // Redirect non-logged-in users from protected routes to signin page
   if (isProtectedRoute && !isLoggedIn) {
     const signInUrl = new URL('/auth/signin', request.url);
     signInUrl.searchParams.set('redirect', pathname);
@@ -38,6 +50,8 @@ export const config = {
     '/negotiations/:path*',
     '/projects/create',
     '/projects/edit/:path*',
+    '/settings/:path*',
+    '/messages/:path*',
   ],
 };
 
