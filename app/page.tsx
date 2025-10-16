@@ -1,8 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import {
@@ -12,16 +10,9 @@ import {
 } from 'lucide-react';
 
 export default function LandingPage() {
-  const { data: session, status } = useSession();
-  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    // Redirect logged-in users to home
-    if (status === 'authenticated') {
-      router.push('/home');
-    }
-
     // Handle scroll effect
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
