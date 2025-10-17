@@ -63,13 +63,13 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Image
               src="/logo.png"
-              alt="بذرة"
+              alt="مُثمّن"
               width={120}
               height={40}
               className="h-10 w-auto"
             />
             <span className="text-2xl font-bold bg-gradient-to-r from-[#14B8A6] to-[#8B5CF6] bg-clip-text text-transparent">
-              بذرة
+              مُثمّن
             </span>
           </Link>
 
